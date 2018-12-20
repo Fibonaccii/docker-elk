@@ -1,3 +1,54 @@
+# 对应filebeats-6.5 配置
+
+
+
+
+
+```yml
+
+#=========================== Filebeat inputs =============================
+
+filebeat.inputs:
+
+# Each - is an input. Most options can be set at the input level, so
+# you can use different inputs for various configurations.
+# Below are the input specific configurations.
+
+- type: log
+  enabled: true
+  paths:
+    - /home/jenkins/public/back-end/eap-sta-exam-affair-api/eap-sta-exam-affair-api.log
+  fields:
+    log_type: eap-sta-exam-affair-api
+    evn_type: dev
+
+- type: log
+  enabled: true
+  paths:
+    - /home/jenkins/public/front-end/scripts/eap-sta-exam-affair-web-staff/host.access.log
+  fields:
+    log_type: eap-sta-exam-affair-api-nginx
+    evn_type: dev
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Elastic stack (ELK) on Docker
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
