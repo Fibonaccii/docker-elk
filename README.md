@@ -17,17 +17,17 @@ filebeat.inputs:
 - type: log
   enabled: true
   paths:
-    - /home/jenkins/public/back-end/eap-sta-exam-affair-api/eap-sta-exam-affair-api.log
+    - /api.log
   fields:
-    log_type: eap-sta-exam-affair-api
+    log_type: xxxxxxx
     evn_type: dev
 
 - type: log
   enabled: true
   paths:
-    - /home/jenkins/public/front-end/scripts/eap-sta-exam-affair-web-staff/host.access.log
+    - /host.access.log
   fields:
-    log_type: eap-sta-exam-affair-api-nginx
+    log_type: xxxxxxx-nginx
     evn_type: dev
 
 ```
